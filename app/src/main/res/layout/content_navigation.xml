@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NavigationActivity"
+    tools:showIn="@layout/app_bar_navigation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话号码：（一行一个）"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="134dp" />
+
+            <EditText
+                android:id="@+id/textPhone"
+                android:layout_width="match_parent"
+                android:layout_height="258dp"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbars="vertical"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="75dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="电话号码对应姓名：（一行一个）"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="134dp" />
+
+            <EditText
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="234dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:overScrollMode="ifContentScrolls"
+                android:scrollbars="vertical"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="75dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="短信内容：\n（使用@name来插入对应接受者的姓名，@phone来插入对应接受者的手机号码）"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="134dp" />
+
+            <EditText
+                android:id="@+id/textMessage"
+                android:layout_width="match_parent"
+                android:layout_height="324dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="75dp" />
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="预览与发送" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="true"
+                android:isScrollContainer="false"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progessCircle"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="20dp"
+                    android:layout_height="33dp"
+                    android:layout_margin="6dp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/textStatus"
+                    android:layout_width="242dp"
+                    android:layout_height="350dp"
+                    android:layout_margin="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:singleLine="false"
+                    android:text="就绪..." />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AixMessage</string>
+    <string name="nav_header_title">AixMessage</string>
+    <string name="nav_header_subtitle">一个小小的群发工具</string>
+    <string name="action_settings">设置</string>
+    <string name="nav_status">概览</string>
+    <string name="nav_tools">拓展工具</string>
+    <string name="nav_tasks">我的任务</string>
+    <string name="nav_share">分享</string>
+    <string name="nav_Aboutline">关于</string>
+    <string name="nav_about">关于</string>
+</resources>
